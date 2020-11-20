@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://kit.fontawesome.com/5db593a567.js" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+    <script src="jstest.js" defer></script>
+    <style media="screen">
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro';
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .Menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: skyblue;
+      padding: 8px 12px;
+    }
+    .Menu_Logo {
+      font-size: 24px;
+    }
+    .Menu_Logo i {
+      color: #d49466;
+    }
+    .Menu_Bar {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+    }
+    .Menu_Bar li {
+      padding: 8px 12px;
+    }
+    .Menu_Bar li:hover {
+      background-color: #d49466;
+      border-radius: 4px;
+    }
+    .Menu_Login {
+      list-style: none;
+      color: white;
+      display: flex;
+      padding-left: 0;
+    }
+    .Menu_Login {
+      color: black;
+    }
+    .Menu_Login li {
+      padding: 8px 12px;
+    }
+
+    .Menu_Toggle_Button {
+      display: none;
+      position: absolute;
+      right: 32px;
+      font-size: 24px;
+      color: black;
+    }
+    @media screen and (max-width: 768px) {
+      .Menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+      }
+      .Menu_Bar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .Menu_Bar li {
+        width: 100%;
+        text-align: center;
+      }
+      .Menu_Login {
+        display: none;
+        justify-content: center;
+        width: 100%;
+      }
+      .Menu_Toggle_Button {
+        display: flex;
+      }
+
+      .Menu_Bar.active,
+      .Menu_Login.active {
+        display: flex;
+      }
+    }
+    .Menu_Background {
+      background: url(../Test/Dok.gif);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-attachment: scroll;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <nav class = "Menu">
+      <div id="Menu_Logo">
+        <i class="fas fa-home"></i>
+        <a href="#">Home</a>
+      </div>
+        <ul class="Menu_Bar">
+          <li><a href="https://www.naver.com">네이버</a></li>
+          <li><a href="https://www.naver.com">네이버</a></li>
+          <li><a href="https://www.naver.com">네이버</a></li>
+        </ul>
+      <ul class="Menu_Login">
+        <li><i class="fas fa-sign-in-alt"></i></li>
+        <li><a href="../Test/Login.html">Login</a></li>
+      </ul>
+
+      <a href="#" class="Menu_Toggle_Button">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+    <article class="Login_Menu">
+      <form class="Login_" action="index.html" method="post">
+
+      </form>
+    </article>
+  </body>
+</html>
